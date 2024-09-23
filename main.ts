@@ -1,6 +1,6 @@
 controller.player2.onButtonEvent(ControllerButton.A, ControllerButtonEvent.Pressed, function () {
     sprites.destroy(projectile)
-    pause(4000)
+    pause(5000)
 })
 sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Player, function (sprite, otherSprite) {
     info.changeLifeBy(-1)
